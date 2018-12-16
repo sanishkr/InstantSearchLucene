@@ -6,6 +6,8 @@
 
 `mvn clean install`
 
+`java -jar target\lucene-0.0.1-SNAPSHOT.jar`
+
 _Results that start with the query term must be given priority_
  
  * eg: http://127.0.0.1:8080/SuggestNames?Keyword=bar
