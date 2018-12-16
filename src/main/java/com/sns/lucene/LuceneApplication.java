@@ -1,6 +1,5 @@
 package com.sns.lucene;
 
-import com.sns.lucene.document.LuceneReadIndex;
 import com.sns.lucene.document.LuceneWriteIndex;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

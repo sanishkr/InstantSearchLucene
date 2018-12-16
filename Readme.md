@@ -1,6 +1,6 @@
 **InstantSearchLucene**
 
-***Intructions***
+***Instructions***
 
 `cd <Dir>`
 
@@ -12,8 +12,9 @@ _Results that start with the query term must be given priority_
  
 _The shortest (in length) result is preferred_
  
-* eg: http://127.0.0.1:8080/SuggestNames?Keyword=kab_
+* eg: http://127.0.0.1:8080/SuggestNames?Keyword=kab
 
 
 ***Find Swagger Documentation below once installation is done:***
+
 `http://127.0.0.1:8080/swagger-ui.html`

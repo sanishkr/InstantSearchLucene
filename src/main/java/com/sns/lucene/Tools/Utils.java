@@ -54,7 +54,7 @@ public class Utils {
     public static Properties fetchProperties(){
         Properties properties = new Properties();
         try {
-            File file = ResourceUtils.getFile("classpath:application.properties");
+            File file = ResourceUtils.getFile("./src/main/resources/application.properties");
             InputStream in = new FileInputStream(file);
             properties.load(in);
         } catch (IOException e) {

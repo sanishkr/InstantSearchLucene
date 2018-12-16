@@ -19,29 +19,6 @@ public class LuceneWriteIndex
 {
 	private static final String INDEX_DIR = Utils.fetchProperties().getProperty("INDEX_DIR");
 
-	public static void main(String[] args) {
-//		IndexWriter writer = createWriter();
-//		List<Document> documents = new ArrayList<>();
-//
-////		Document document1 = createDocument(1, "Lokesh", "Gupta", "howtodoinjava.com");
-////		documents.add(document1);
-//
-//
-//		List<Utils.Person> personList = Utils.getAllPersons();
-//		int i=0;
-//		for (Utils.Person p: personList) {
-//			Document document = createDocument(i++, p.getfName(), p.getmName(), p.getlName());
-//			documents.add(document);
-//		}
-//
-//		//Let's clean everything first
-//		writer.deleteAll();
-//
-//		writer.addDocuments(documents);
-//		writer.commit();
-//	    writer.close();
-	}
-
 	public static void createIndex() throws Exception{
 		IndexWriter writer = createWriter();
 		List<Document> documents = new ArrayList<>();
@@ -51,11 +28,9 @@ public class LuceneWriteIndex
 		for (Utils.Person p: personList) {
 			Document document = createDocument(i++, p.getfName(), p.getmName(), p.getlName(),
 										p.getfName()+" "+p.getmName()+" "+p.getlName());
-//			Document document = createDocument(i++, p.getfName(), p.getmName(), p.getlName());
 			documents.add(document);
 		}
 
-		//Let's clean everything first
 		writer.deleteAll();
 
 		writer.addDocuments(documents);
